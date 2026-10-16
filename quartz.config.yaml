@@ -16,29 +16,29 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      header: EB Garamond
+      body: EB Garamond
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
+        light: "#fdfdfc"
+        lightgray: "#e8e3ea"
+        gray: "#9c93a3"
+        darkgray: "#4a4453"
+        dark: "#332e3a"
+        secondary: "#6b4f80"
+        tertiary: "#9b85ad"
+        highlight: rgba(107, 79, 128, 0.12)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
+        light: "#17151a"
+        lightgray: "#2c2730"
+        gray: "#7d7486"
+        darkgray: "#c7bfce"
+        dark: "#eae4ee"
+        secondary: "#b592cf"
+        tertiary: "#d2b8e8"
+        highlight: rgba(181, 146, 207, 0.15)
         textHighlight: "#b3aa0288"
 plugins:
   - source: "@quartz-community/created-modified-date"

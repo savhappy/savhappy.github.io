@@ -1,3 +1,38 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// LaTeX-article-inspired typography for note content
+article.popover-hint {
+  > p,
+  section p {
+    text-align: justify;
+    hyphens: auto;
+    margin: 0;
+    text-indent: 1.5em;
+
+    &:first-child {
+      text-indent: 0;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: $boldWeight;
+    letter-spacing: 0.01em;
+  }
+
+  h1 {
+    text-align: center;
+    border-bottom: 1px solid var(--lightgray);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  blockquote {
+    font-style: italic;
+    border-left: 2px solid var(--gray);
+  }
+}
