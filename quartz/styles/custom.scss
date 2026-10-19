@@ -1,6 +1,10 @@
 @use "./variables.scss" as *;
 
 // LaTeX-article-inspired typography for note content
+body[data-slug="index"] #quartz-body > .center > hr {
+  display: none;
+}
+
 article.popover-hint {
   > p,
   section p {
