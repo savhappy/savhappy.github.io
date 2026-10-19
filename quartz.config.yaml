@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: ""
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -16,16 +16,16 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: EB Garamond
-      body: EB Garamond
+      header: Alegreya Sans
+      body: Alegreya Sans
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#fdfdfc"
+        light: "#fdfdfd"
         lightgray: "#e8e3ea"
-        gray: "#9c93a3"
+        gray: "#4a4453"
         darkgray: "#4a4453"
-        dark: "#332e3a"
+        dark: "#4a4453"
         secondary: "#6b4f80"
         tertiary: "#9b85ad"
         highlight: rgba(107, 79, 128, 0.12)
@@ -33,9 +33,9 @@ configuration:
       darkMode:
         light: "#17151a"
         lightgray: "#2c2730"
-        gray: "#7d7486"
+        gray: "#c7bfce"
         darkgray: "#c7bfce"
-        dark: "#eae4ee"
+        dark: "#c7bfce"
         secondary: "#b592cf"
         tertiary: "#d2b8e8"
         highlight: rgba(181, 146, 207, 0.15)
