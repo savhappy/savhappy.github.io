@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Welcome, make yourself at home"
 aliases:
   - home
 ---
