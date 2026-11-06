@@ -41,7 +41,7 @@ article.popover-hint {
   }
 }
 
-// Side navigation styled after jackbdu.com/blog: minimal, right-aligned,
+// Side navigation styled after jackbdu.com/blog: minimal, left-aligned,
 // lowercase, single grey with a darker grey on hover.
 
 .sidebar.left {
@@ -56,8 +56,8 @@ article.popover-hint {
   font-family: Ubuntu, Calibri, "DejaVu Sans", "Noto Sans", sans-serif;
   font-weight: 300;
   letter-spacing: 0.5px;
-  text-align: right;
-  align-items: flex-end;
+  text-align: left;
+  align-items: flex-start;
   text-transform: lowercase;
 
   .page-title,
@@ -131,12 +131,12 @@ article.popover-hint {
   }
 
   .folder-container {
-    justify-content: flex-end;
-    flex-direction: row-reverse;
+    justify-content: flex-start;
+    flex-direction: row;
   }
 
   .folder-icon {
-    margin: 0 0 0 5px;
+    margin: 0 5px 0 0;
   }
 
   // toolbar (search, dark mode, reader mode) in the same grey
