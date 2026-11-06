@@ -6,5 +6,5 @@ aliases:
 <br>
 <br>
 <br>
-<div style="text-align: right;"><span translate="no" style="display: inline-block; border-radius: 8px; background-color: var(--highlight); color: var(--secondary); font-size: 1.6rem; letter-spacing: 0.02em; padding: 0.4rem 0.9rem; margin: 0 0.1rem;">...mais non, tout est ici.</span></div>
+<div style="text-align: right;"><span translate="no" style="display: inline-block; font-family: 'Italianno', cursive; font-weight: 400; color: var(--secondary); font-size: 2.4rem; line-height: 1.2;">...mais non, tout est ici.</span></div>
 
