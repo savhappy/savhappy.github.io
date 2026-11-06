@@ -40,3 +40,121 @@ article.popover-hint {
     border-left: 2px solid var(--gray);
   }
 }
+
+// Side navigation styled after jackbdu.com/blog: minimal, right-aligned,
+// lowercase, single grey with a darker grey on hover.
+
+.sidebar.left {
+  --nav-grey: #999;
+  --nav-grey-hover: #555;
+
+  :root[saved-theme="dark"] & {
+    --nav-grey: #888;
+    --nav-grey-hover: #ccc;
+  }
+
+  font-family: Ubuntu, Calibri, "DejaVu Sans", "Noto Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: right;
+  align-items: flex-end;
+  text-transform: lowercase;
+
+  .page-title,
+  .page-title a,
+  .explorer-content a,
+  .folder-container div > a,
+  .folder-container div > button,
+  .folder-container div > button span,
+  .folder-icon,
+  button.desktop-explorer,
+  button.desktop-explorer h2 {
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: inherit;
+    text-transform: lowercase;
+    color: var(--nav-grey);
+    opacity: 1;
+  }
+
+  .page-title a,
+  .explorer-content a,
+  .folder-container div > a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    transition: color 0.3s ease;
+
+    &:hover,
+    &.active {
+      color: var(--nav-grey-hover);
+      text-decoration-style: solid;
+    }
+  }
+
+  .folder-icon:hover,
+  button.desktop-explorer:hover,
+  button.desktop-explorer:hover h2 {
+    color: var(--nav-grey-hover);
+  }
+
+  .explorer {
+    width: 100%;
+  }
+
+  // no "explorer" toggle heading on desktop: the list is always shown
+  @media all and not (max-width: 800px) {
+    button.desktop-explorer {
+      display: none;
+    }
+
+    .explorer.collapsed {
+      flex: 0 1 auto;
+    }
+
+    .explorer-content {
+      margin-top: 0;
+    }
+  }
+
+  // flat list, right-aligned: no connecting line, tighter vertical rhythm
+  .explorer-content {
+    ul li {
+      padding: 0.3em 0;
+    }
+
+    .folder-outer > ul {
+      border-left: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
+
+  .folder-container {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+
+  .folder-icon {
+    margin: 0 0 0 5px;
+  }
+
+  // toolbar (search, dark mode, reader mode) in the same grey
+  .search button,
+  .darkmode,
+  .readermode {
+    color: var(--nav-grey);
+    background: transparent;
+    border: none;
+
+    svg {
+      fill: var(--nav-grey);
+    }
+
+    &:hover,
+    &:hover svg {
+      color: var(--nav-grey-hover);
+      fill: var(--nav-grey-hover);
+    }
+  }
+}
